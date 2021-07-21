@@ -7,13 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<link rel="stylesheet" href="./BootStrap/bootstrap.css">
+<style>
+    body {
+        background-color: #f1f1f1;
+    }
+
+    .col {
+        height: 200px;
+    }
+
+    .col a {
+        color: #f1f1f1;
+        border-radius: 10px;
+        background-color: tomato;
+        transition: all 0.5s;
+    }
+
+    .col a:hover {
+        color: #fff;
+        font-size: 20px;
+        transform: scale(1.05);
+    }
+</style>
 
 <body>
-    <a href="./Day01-3d旋转盒子/index.html">3d旋转盒子</a>
-    <a href="./Day02-一道光划过特效/index.html">反光特效</a>
-    <a href="./Day03-毛玻璃特效/index.html">毛玻璃特效</a>
-    <a href="./Day04-简洁的登录界面/index.html">简介登录</a>
-    <a href="./Day05-视差滚动/index.html">视差滚动</a>
+    <div class="container">
+        <div class="row-cols-sm-1 row-cols-md-5 nav">
+            <div class="col">
+                <a href="./Day01-3d旋转盒子/index.html"
+                    class="shadow-sm mt-3 me-2 nav-link h-100 d-flex justify-content-center align-items-center">3d旋转盒子</a>
+            </div>
+            <div class="col">
+                <a href="./Day02-一道光划过特效/index.html"
+                    class="shadow-sm mt-3 me-2 nav-link h-100 d-flex justify-content-center align-items-center">反光特效</a>
+            </div>
+            <div class="col">
+                <a href="./Day03-毛玻璃特效/index.html"
+                    class="shadow-sm mt-3 me-2 nav-link h-100 d-flex justify-content-center align-items-center">毛玻璃特效</a>
+            </div>
+            <div class="col">
+                <a href="./Day04-简洁的登录界面/index.html"
+                    class="shadow-sm mt-3 me-2 nav-link h-100 d-flex justify-content-center align-items-center">简介登录</a>
+            </div>
+            <div class="col">
+                <a href="./Day05-视差滚动/index.html"
+                    class="shadow-sm mt-3 me-2 nav-link h-100 d-flex justify-content-center align-items-center">视差滚动</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./BootStrap/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
