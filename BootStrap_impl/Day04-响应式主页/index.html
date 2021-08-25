@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSpirit的BootStrap 5.0练习</title>
+</head>
+<link rel="stylesheet" href="../../BootStrap/bootstrap.css">
+<style>
+    body::before {
+        content: "";
+        display: block;
+        height: 63px;
+    }
+</style>
+
+<body>
+    <!-- 头部导航栏部分 -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">CodeSpirit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle='collapse' data-bs-target='#navmenu'>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id='navmenu'>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <div class="nav-link">前端知识</div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">后端知识</div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-link">数据库知识</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 前言介绍内容 -->
+    <section class="p-5 bg-dark text-light text-center text-md-start mb-3">
+        <div class="container">
+            <div class="d-flex">
+                <div>
+                    <h1>成为一个<span class="text-primary">前端工程师</span></h1>
+                    <p class="my-4">
+                        今天是继续巩固我的BootStrap练习的,希望在暑假结束之前,把bootStrap5掌握的牢一点
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptatum recusandae
+                        temporibus alias illo deleniti provident magni officia quam ducimus quasi, deserunt, quis nisi
+                        tempora vel! Quod velit non itaque.
+                    </p>
+                    <button type="button" class="btn btn-primary btn-lg">开始编程之旅</button>
+                </div>
+                <img src="./img/showcase.svg" alt="showcase" class="w-50 d-none d-md-block">
+            </div>
+        </div>
+    </section>
+
+    <!-- 注册内容 -->
+    <section class="p-5 bg-primary text-light mb-3">
+        <div class="container">
+            <div class="d-md-flex justify-content-center align-items-center">
+                <h3 class="col-md-6 mb-3">现在开始注册账号开始学习编程吧</h3>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="请输入你的邮箱">
+                    <button class="btn btn-dark btn-lg">注册</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 三张卡片内容 -->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 mb-3">
+                    <div class="card text-center bg-dark text-light">
+                        <div class="card-header">
+                            前端
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">前端知识</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                                quibusdam
+                                reiciendis quis velit beatae minus laudantium quidem neque ipsum eligendi quam itaque
+                                repellendus quasi quae modi rerum ex! Rem, distinctio.</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button type="button" class="btn btn-primary">学习前端</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 mb-3">
+                    <div class="card text-center bg-secondary text-light">
+                        <div class="card-header">
+                            后端
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">后端知识</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                                quibusdam
+                                reiciendis quis velit beatae minus laudantium quidem neque ipsum eligendi quam itaque
+                                repellendus quasi quae modi rerum ex! Rem, distinctio.</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button type="button" class="btn btn-dark">学习后端</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 mb-3">
+                    <div class="card text-center bg-dark text-light">
+                        <div class="card-header">
+                            数据库
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">数据库知识</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                                quibusdam
+                                reiciendis quis velit beatae minus laudantium quidem neque ipsum eligendi quam itaque
+                                repellendus quasi quae modi rerum ex! Rem, distinctio.</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button type="button" class="btn btn-primary">学习数据库</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 第一个大版课程介绍 -->
+    <section class="p-5">
+        <div class="container">
+            <div class='row align-items-center justify-content-center'>
+                <div class="col-md-6">
+                    <img src="./img/1.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col text-center p-5">
+                    <h2>课程介绍</h2>
+                    <p class='lead text-start'>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta fugit tempore nemo
+                        ducimus
+                        architecto qui quis.
+                    </p>
+                    <p class="text-start">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut nostrum, dolores iure vel
+                        cupiditate porro? Eos numquam temporibus deserunt, illo impedit rerum nam quaerat natus
+                        asperiores facilis, vero eius minus!
+                    </p>
+                    <a href="" class="btn btn-info">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第二个大版课程介绍 -->
+    <section class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class='row align-items-center justify-content-center'>
+                <div class="col-md-6 order-md-1">
+                    <img src="./img/2.svg" alt="" class="img-fluid">
+                </div>
+                <div class="col text-center p-5 order-md-0">
+                    <h2>课程介绍</h2>
+                    <p class='lead text-start'>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta fugit tempore nemo
+                        ducimus
+                        architecto qui quis.
+                    </p>
+                    <p class="text-start">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut nostrum, dolores iure vel
+                        cupiditate porro? Eos numquam temporibus deserunt, illo impedit rerum nam quaerat natus
+                        asperiores facilis, vero eius minus!
+                    </p>
+                    <a href="" class="btn btn-info">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="p-4">
+        <div class="container">
+            <h1 class="text-center">常见问题</h1>
+            <div class="accordion" id="commonQuestion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            常见问题一
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#commonQuestion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellat perferendis, atque,
+                            necessitatibus fugit sed tempora dignissimos mollitia neque numquam commodi voluptate
+                            reiciendis enim dolore illum praesentium eum, sit porro?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            常见问题二
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                        data-bs-parent="#commonQuestion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellat perferendis, atque,
+                            necessitatibus fugit sed tempora dignissimos mollitia neque numquam commodi voluptate
+                            reiciendis enim dolore illum praesentium eum, sit porro?
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            常见问题三
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+                        data-bs-parent="#commonQuestion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repellat perferendis, atque,
+                            necessitatibus fugit sed tempora dignissimos mollitia neque numquam commodi voluptate
+                            reiciendis enim dolore illum praesentium eum, sit porro?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 讲师介绍 -->
+    <section class="p-4 bg-primary">
+        <div class="container">
+            <h1 class="text-center text-light">讲师介绍</h1>
+            <p class="mb-5 text-light">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, nesciunt voluptas eveniet minima libero
+                tempore, minus dolorem sed fuga, obcaecati quo quisquam sunt accusantium in maxime. Cupiditate quos
+                repudiandae enim.
+            </p>
+            <div class="row g-3">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img class="rounded-circle" src="./img/01-man.jpeg" alt="张三">
+                            <h4 class="card-title text-center">张三</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis tempora
+                                ut
+                                eligendi, molestias assumenda vel ipsa impedit repellendus sequi quo ullam quam atque
+                                officiis!
+                                Nemo
+                                architecto vitae quibusdam quo maxime.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img class="rounded-circle" src="./img/02-man.jpeg" alt="张三">
+                            <h4 class="card-title text-center">张三</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis tempora
+                                ut
+                                eligendi, molestias assumenda vel ipsa impedit repellendus sequi quo ullam quam atque
+                                officiis!
+                                Nemo
+                                architecto vitae quibusdam quo maxime.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img class="rounded-circle" src="./img/03-man.jpeg" alt="张三">
+                            <h4 class="card-title text-center">张三</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis tempora
+                                ut
+                                eligendi, molestias assumenda vel ipsa impedit repellendus sequi quo ullam quam atque
+                                officiis!
+                                Nemo
+                                architecto vitae quibusdam quo maxime.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img class="rounded-circle" src="./img/04-man.jpeg" alt="张三">
+                            <h4 class="card-title text-center">张三</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis tempora
+                                ut
+                                eligendi, molestias assumenda vel ipsa impedit repellendus sequi quo ullam quam atque
+                                officiis!
+                                Nemo
+                                architecto vitae quibusdam quo maxime.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="p-4">
+        <div class="container">
+            <h2 class="text-center">联系我们</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">电话 12000XXX0</li>
+                <li class="list-group-item">邮箱: bilibili@bili.com</li>
+                <li class="list-group-item">地址: 江苏省xxx市</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 尾部 -->
+    <footer class="p-5 bg-dark text-white text-center">
+        <div class="container">
+            <p class="lead">CopyRight &copy; 2021 CodeSpirit</p>
+        </div>
+    </footer>
+
+    <script src="../../BootStrap/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        width: 1000px;
+        height: 100vh;
+        margin: 0px auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #Validation {
+        display: inline-block;
+        width: 100px;
+        height: 60px;
+        background-color: #ccc;
+        text-align: center;
+        line-height: 60px;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div>
+            <span id='Validation'>12345</span>
+            <span><a href="" id="change">看不清换一张</a></span>
+        </div>
+        <div>
+            <form action="">
+                <label for="yanzhenma">验证码</label>
+                <input type="text" id="yanzhenma">
+                <button>确认</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        // 取得元素
+        let validation = document.querySelector('#Validation');
+        let change = document.querySelector("#change");
+        let yanzhenma = document.querySelector("#yanzhenma");
+        let btn = document.querySelector("button");
+
+        // 定义保存验证码的地方
+        let sum = '';
+
+        // 定义随机验证码的数组
+        let numarr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        let lowerLeeter = ['a', 'b', 'c', 'd', 'e', 'f', 'j', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
+            's',
+            't', 'u', 'v', 'w', 'x', 'y', 'z'
+        ];
+        let upperLetter = lowerLeeter.map((item) => {
+            return item.toUpperCase();
+        })
+        let totalArr = [...numarr, ...lowerLeeter, ...upperLetter];
+
+        // 定义随机数
+        function getVal(arr, sum) {
+            for (let i = 0; i < 5; i++) {
+                let index = Math.floor(Math.random() * (arr.length));
+                let randomNum = arr[index];
+                sum += randomNum;
+            }
+            return sum;
+        }
+
+        // 在页面加载的时候就产生一个随机数
+        validation.textContent = getVal(totalArr, sum);
+
+        // 看不清换一张的功能实现
+        change.addEventListener('click', (e) => {
+            e.preventDefault();
+            validation.textContent = getVal(totalArr, sum);
+        })
+
+        // 确认功能,比对验证码的实现
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (yanzhenma.value === validation.textContent) {
+                alert('恭喜你验证成功');
+                yanzhenma.value = '';
+
+            } else {
+                alert("请重新输入验证码");
+                yanzhenma.value = '';
+            }
+        })
+    </script>
+</body>
+
+</html>

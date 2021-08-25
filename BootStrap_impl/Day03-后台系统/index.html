@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/styles/index/index.css">
+</head>
+
+<body>
+    <!-- 头部导航的制作 -->
+    <header class="bg-dark">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-3 col-sm-2">
+                    <img src="./public/images/logo.png" alt="大事件项目的logo">
+                </div>
+                <div class="col-md-4 col-sm-1"></div>
+                <div class="col-md-2 col-sm-6 text-white d-flex justify-content-center align-items-center">
+                    <div class="dropdown">
+                        <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" id="dropdownUser1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./public/images/bg.jpg" alt="" width="32" height="32" class="rounded-circle">
+                            个人中心
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownUser1">
+                            <li><a href="#" class="dropdown-item">基本资料</a></li>
+                            <li><a href="#" class="dropdown-item">更换头像</a></li>
+                            <li><a href="#" class="dropdown-item">重置密码</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-grid col-md-2 col-sm-3 m-auto">
+                    <button class=" btn btn-warning">退出</button>
+                </div>
+                <div class="col-md-1 col-sm-1"></div>
+            </div>
+        </div>
+    </header>
+    <!-- 开始制作侧边标签页 -->
+    <main>
+        <div class="container-fluid g-0">
+            <div class="d-flex vh-100 row">
+                <ul class="nav nav-tabs d-flex flex-column bg-secondary col-3" role="tablist">
+                    <a href="#" class="d-flex justify-content-center align-items-center link-light text-decoration-none"
+                        aria-expanded="false" style="height: 5vw;">
+                        <img src="./public/images/bg.jpg" alt="" width="32" height="32" class="col-2 rounded-circle">
+                        <span class="col-6 text-center">欢迎</span>
+                    </a>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link grey" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="home" aria-selected="true">首页</button>
+                    </li>
+                    <div class="accordion" id="navBar">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button grey" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    个人中心
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class=" accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#navBar">
+                                <div class="accordion-body p-0">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link grey" id="person-tab" data-bs-toggle="tab"
+                                            data-bs-target="#person" type="button" role="tab" aria-controls="home"
+                                            aria-selected="true">基本资料</button>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button grey" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    文章管理
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                                data-bs-parent="#navBar">
+                                <div class="accordion-body p-0">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link grey" id="aricle-tab" data-bs-toggle="tab"
+                                            data-bs-target="#article" type="button" role="tab" aria-controls="home"
+                                            aria-selected="true">写文章</button>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+
+                <div class="tab-content col-9" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h1>首页内容</h1>
+                        这里可以放文字、列表等一切页面元素
+                    </div>
+                    <div class="tab-pane fade" id="person" role="tabpanel" aria-labelledby="person-tab">
+                        <h1>个人资料</h1>
+                        这里可以放文字、列表等一切页面元素
+                    </div>
+                    <div class="tab-pane fade" id="article" role="tabpanel" aria-labelledby="article-tab">
+                        <h1>联系方式</h1>
+                        这里可以放文字、列表等一切页面元素
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+<script src="./public/js/bootstrap.bundle.js"></script>
+
+</html>

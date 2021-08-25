@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纯CSS视差滚动</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*  这个容器一定要加上高度100vh,要不然会出现右侧滚动条出现两条的情况
+        他是在一个容器中进行的,远离z轴的图片向上滑动的时候会出这个容器,因为3d效果
+        所以说要先限定一个高度,保证我们能看到的范围,当前视图的100vh应该是最好的
+        因为这个视觉差,是利用z为负值时,相当于离我们眼睛远点,要想让它和我们在z原点上看到的东西一样
+        那就需要将它等比例的放大,调整到与自己的屏幕一样大
+        而此时,如果我们向下滑动,滑动的是相同距离,在z的的负距离上,其实滑动的也是一样的,但是视觉上就给我们看上去位移比原点的少了
+    */
+    .container {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 3px;
+
+    }
+
+    .container div {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .image {
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        transform: translateZ(-1px) scale(1.5);
+        z-index: -1;
+    }
+
+
+
+    .title {
+        font-size: 28px;
+        color: #fff;
+        transform: translateY(-40vh) translateZ(1px);
+    }
+
+    .cover {
+        height: 40vh;
+        background: #fff;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="image" style="background-image: url(./images/美女_3.jpg);" id="pic1"></div>
+        <div class="title">
+            <h1>Hello! 我是CodeSpirit</h1>
+        </div>
+        <div class="cover">
+            <h1>我是一名想要成为前端程序员的小菜鸡</h1>
+        </div>
+        <div class="image" style="background-image:url(./images/美女_1.jpg)" id="pic2"></div>
+        <div class="title">
+            <h1>今天是来用3D效果来写视差滚动的</h1>
+        </div>
+    </div>
+</body>
+
+</html>

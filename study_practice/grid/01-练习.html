@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent {
+        display: grid;
+        /*  1. 第一个参数表示每一行有多少个
+            2.第二个参数表示每一个的宽高为多少
+            3. 第三个参数是你给它起的名字
+        */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 20px [col-start] 20px [col-start] 20px [col-start];
+        /* 上面两者等价 */
+    }
+
+    .item {
+        grid-column-start: col-start 2;
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+
+</html>

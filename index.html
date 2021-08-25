@@ -8,56 +8,89 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="./BootStrap/bootstrap.css">
+<link rel="stylesheet" href="./styles/index.css">
 <style>
-    body {
-        background-color: #f1f1f1;
+    a[class*='acard'] {
+        text-align: center;
+        color: #000;
+        text-decoration: none;
     }
 
-    .col {
-        height: 200px;
+    div[class*=col-sm-12] {
+        transition: all .3s;
     }
 
-    .col a {
-        color: #f1f1f1;
-        border-radius: 10px;
-        background-color: tomato;
-        transition: all 0.5s;
-    }
-
-    .col a:hover {
-        color: #fff;
-        font-size: 20px;
+    div[class*=col-sm-12]:hover {
         transform: scale(1.05);
     }
 </style>
 
 <body>
     <div class="container">
-        <div class="row-cols-sm-1 row-cols-md-5 nav">
-            <div class="col">
-                <a href="./Day01-3d旋转盒子/index.html"
-                    class="shadow-sm mt-3 me-2 nav-link h-100 d-flex justify-content-center align-items-center">3d旋转盒子</a>
+        <div class="row g-3 mt-3">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <a href="./HTML_CSS_PURE_Impl/Day01-3d旋转盒子/index.html" class="acard w-100">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/3D旋转魔方.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">3D旋转魔方</h4>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="col">
-                <a href="./Day02-一道光划过特效/index.html"
-                    class="shadow-sm mt-3 me-2 nav-link h-100 d-flex justify-content-center align-items-center">反光特效</a>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <a href="./HTML_CSS_PURE_Impl/Day02-一道光划过特效/index.html" class="acard w-100">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/光划过效果.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">光划过效果</h4>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="col">
-                <a href="./Day03-毛玻璃特效/index.html"
-                    class="shadow-sm mt-3 me-2 nav-link h-100 d-flex justify-content-center align-items-center">毛玻璃特效</a>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <a href="./HTML_CSS_PURE_Impl/Day03-毛玻璃特效/index.html" class="acard w-100">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/毛玻璃特效.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">毛玻璃特效</h4>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="col">
-                <a href="./Day04-简洁的登录界面/index.html"
-                    class="shadow-sm mt-3 me-2 nav-link h-100 d-flex justify-content-center align-items-center">简介登录</a>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <a href="./HTML_CSS_PURE_Impl/Day04-视差滚动/index.html" class="acard w-100">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/视差滚动(纯CSS).png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">视差滚动(纯CSS)</h4>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="col">
-                <a href="./Day05-视差滚动/index.html"
-                    class="shadow-sm mt-3 me-2 nav-link h-100 d-flex justify-content-center align-items-center">视差滚动</a>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <a href="./HTML_CSS_PURE_Impl/Day05-HoverMe/index.html" class="acard w-100">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/Hover_me.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Hover me</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <a href="./HTML_CSS_PURE_Impl/Day06-卡片/Origin_Version/index.html" class="acard w-100">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/炫酷卡片.png" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">炫酷卡片</h4>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
+
     </div>
-
-
 
     <script src="./BootStrap/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,0 +1,109 @@
+$font-size:16px;
+$themeColor:#49a6e9;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    height: 10vh;
+    line-height: 40px;
+    box-shadow:
+        0px 3px 3px rgba($color: #000, $alpha: .1),
+        0px 6px 6px rgba($color: #000000, $alpha: .2),
+        0px 12px 12px rgba($color: #000000, $alpha: .1);
+
+    .headContent {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        margin: 0px 25%;
+
+        .title {
+            flex: 1;
+            font-size: $font-size*1.5;
+            font-weight: bolder;
+            color: $themeColor;
+            letter-spacing: 0.1em;
+        }
+
+        .navLink {
+            flex: 1;
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+            a {
+                padding-right: 10px;
+                color: #063272;
+                font-size: $font-size*1.5;
+                text-decoration: none;
+
+                &:hover {
+                    color: $themeColor;
+                }
+            }
+
+            .item1 {
+                text-align: center;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+        }
+    }
+}
+
+
+section {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f3f5;
+
+
+    .cbg {
+        line-height: 80px;
+        text-align: center;
+        border-radius: 10px;
+        width: 800px;
+        font-size: $font-size*3.5;
+        font-weight: bolder;
+        color: #fff;
+        background-color: #222;
+        height: 80px;
+        margin-bottom: 40px;
+
+        #color {
+            color: $themeColor;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        font-weight: bolder;
+        font-size: $font-size*1.5;
+        border-radius: 10px;
+        width: 200px;
+        height: 50px;
+        background-color: #fff;
+        transition: all .5s;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}

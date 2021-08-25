@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>懒加载</title>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .container {
+        width: 100vw;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+
+<body>
+
+    <!-- <img class="lazyload" data-src="./image/02.jpg" width="765" height="574" />
+    <img class="lazyload" data-src="./image/04.jpg" width="765" height="574" /> -->
+    <div class="container">
+        <img class="lazy" data-src="./image/01.jpg" alt="">
+        <img class="lazy" data-src="./image/02.jpg" alt="">
+        <img class="lazy" data-src="./image/03.png" alt="">
+        <img class="lazy" data-src="./image/04.jpg" alt="">
+        <img class="lazy" data-src="./image/05.jpg" alt="">
+        <img class="lazy" data-src="./image/06.jpg" alt="">
+        <img class="lazy" data-src="./image/07.jpg" alt="">
+        <img class="lazy" data-src="./image/08.png" alt="">
+    </div>
+
+</body>
+<!-- <script src="./lazy_load.js"></script> -->
+
+</html>
