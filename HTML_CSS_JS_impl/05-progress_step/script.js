@@ -37,5 +37,8 @@ function change(currentIndex) {
     } else {
         prevBtn.disabled = true;
     }
+
+    // 进度条的计算方法
+    // 根据⚪的个数,将进度分成 ⚪的length-1段长度,也就是每点击一次的进度条
     progress.style.width = (100 / (circles.length - 1)) * (currentIndex) + "%"
 }
