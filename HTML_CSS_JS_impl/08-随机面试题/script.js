@@ -26,6 +26,9 @@ function interviewType() {
         "今天练习一道React面试题",
         "今天练习一道浏览器面试题",
     ]
-    const typeNum = randomNum(type.length - 1);
+    const typeNum = randomNum(type.length) - 1;
+    console.log(typeNum);
     return type[typeNum];
 }
+
+console.log(interviewType());
