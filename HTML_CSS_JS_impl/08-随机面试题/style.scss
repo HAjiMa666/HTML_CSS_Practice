@@ -24,12 +24,16 @@ body {
         text-align: center;
     }
 
-    button {
+    #start {
         cursor: pointer;
         width: $basicLength*2;
         height: $basicLength*0.5;
         border-radius: 10px;
         border: none;
         margin: 30px;
+    }
+
+    #start:active {
+        transform: scale(0.95);
     }
 }

@@ -4,6 +4,7 @@ const tip = document.querySelector(".tip");
 
 btn.addEventListener("click", () => {
     const question = interviewType();
+    btn.classList.add("btn-click");
     type.textContent = question;
     tip.textContent = "👨‍🎓👨‍🎓请在今天内完成"
 })
