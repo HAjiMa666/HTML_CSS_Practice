@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background:
+            url(https://gitee.com/IU_czx/images/raw/master/img/1170655.jpg) no-repeat center;
+        background-size: cover;
+        //使用过滤器 来给画面增加模糊效果
+        filter: blur(0px);
+    }
+
+    .loading {
+        position: relative;
+        font-size: 50px;
+        color: #fff;
+    }
+}
