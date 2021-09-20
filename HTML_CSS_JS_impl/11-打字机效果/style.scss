@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 20px;
+}
+
+body {
+    background-color: #363b40;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Zhi Mang Xing', cursive;
+
+
+    .bless {
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &.start::after {
+            display: inline-block;
+            content: "";
+            width: 15px;
+            height: 100px;
+            margin: 0px 10px;
+            background-color: #000;
+        }
+
+        &.ended::after {
+            animation: cursor 1s steps(2, jump-none) infinite;
+        }
+
+        span {
+            font-size: 5rem;
+            width: 0%;
+            display: inline-block;
+            overflow: hidden;
+            animation: blesstextin 1s forwards;
+        }
+    }
+
+    .name {
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        &::after {
+            display: inline-block;
+            content: "";
+            width: 15px;
+            height: 100px;
+            margin: 0px 10px;
+            background-color: #000;
+            transition: all .1s ease-in-out;
+        }
+
+        &.nameEnded::after {
+            opacity: 0;
+        }
+
+        span {
+            font-size: 6rem;
+            flex: 0;
+            display: inline-block;
+            overflow: hidden;
+            animation: nameTextin 1s forwards;
+        }
+    }
+}
+
+
+@keyframes blesstextin {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 25%;
+    }
+}
+
+@keyframes nameTextin {
+    from {
+        flex: 0;
+    }
+
+    to {
+        flex: 1;
+    }
+}
+
+@keyframes cursor {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
