@@ -1,8 +1,8 @@
 const blessName = document.querySelector(".name");
 const bless = document.querySelector(".bless");
 // 使用matchAll进行字符串遍历 最为方便
-let blessRes = "祝你生日快乐".matchAll(/\S/g);
-let blessNameRes = "爸爸".matchAll(/\S/g);
+let blessRes = "祝中秋节快乐".matchAll(/\S/g);
+let blessNameRes = "大家".matchAll(/\S/g);
 // 使用matchAll会返回一个迭代器 需要遍历才能将数据取出来
 for (const word of blessNameRes) {
     blessName.insertAdjacentHTML("beforeend", `<span class="blessName">${word}</span>`);

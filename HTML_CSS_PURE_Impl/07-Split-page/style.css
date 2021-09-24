@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 20px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.container .ps5Container,
+.container .xboxContainer {
+  font-size: 1.3rem;
+  color: #fff;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transition: all 1s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container .ps5Container h1,
+.container .xboxContainer h1 {
+  height: 80px;
+  overflow: hidden;
+}
+
+.container .ps5Container h1,
+.container .ps5Container div,
+.container .xboxContainer h1,
+.container .xboxContainer div {
+  position: relative;
+  z-index: 1;
+}
+
+.container .ps5Container div,
+.container .xboxContainer div {
+  font-size: 1rem;
+  margin-top: 30px;
+  cursor: pointer;
+  border: 5px solid #fff;
+  padding: 20px 80px;
+}
+
+.container .ps5Container {
+  background-image: url("./ps.jpg");
+}
+
+.container .ps5Container:hover {
+  flex: 3;
+}
+
+.container .ps5Container::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #7f7dec;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.container .ps5Container div {
+  transition: all 0.3s;
+}
+
+.container .ps5Container div:hover {
+  border: 5px solid #5754ec;
+  background-color: #5754ec;
+}
+
+.container .xboxContainer {
+  background-image: url("./xbox.jpg");
+}
+
+.container .xboxContainer:hover {
+  flex: 3;
+}
+
+.container .xboxContainer::before {
+  content: "";
+  position: absolute;
+  background-color: #2a292a;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.container .xboxContainer div {
+  transition: all 0.3s;
+}
+
+.container .xboxContainer div:hover {
+  border: 5px solid #1c7a1c;
+  background-color: #1c7a1c;
+}
+/*# sourceMappingURL=style.css.map */
